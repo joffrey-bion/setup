@@ -11,13 +11,13 @@ Go to Windows Update and upgrade if not already on Windows 11.
 
 ## Install WSL2 (before Docker Desktop)
 
-Official installation doc: https://docs.microsoft.com/en-us/windows/wsl/install
-
-In short, just run the following in an admin Powershell or CMD:
+Run the following in an admin Powershell or CMD:
 
 ```
 wsl --install
 ```
+
+(More info in the [official installation doc](https://docs.microsoft.com/en-us/windows/wsl/install))
 
 ## Install WinGet
 
@@ -26,7 +26,7 @@ Winget might already be installed. Try to run `winget` from Powershell. If not i
 1. Make sure you’re logged in to Windows
 2. Open the Microsoft Store
 3. Search for “winget” (you’ll find the App Installer application)
-4. Get the App Installer application
+4. Get the `App Installer` application (it will install the `winget` CLI)
 
 (More info in the [official installation doc](https://learn.microsoft.com/en-us/windows/package-manager/winget/))
 
