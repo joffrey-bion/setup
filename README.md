@@ -32,7 +32,14 @@ Winget might already be installed. Try to run `winget` from Powershell. If not i
 
 ## Install software
 
-Download the relevant winget JSON files, and import them using the following command:
+Download the relevant winget JSON files:
+
+```powershell
+curl -o winget-common.json https://raw.githubusercontent.com/joffrey-bion/setup/main/winget-common.json
+curl -o winget-jetbrains.json https://raw.githubusercontent.com/joffrey-bion/setup/main/winget-jetbrains.json
+```
+
+Then import them using the following command:
 ```
 winget import -i <filename>
 ```
