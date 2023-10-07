@@ -11,7 +11,8 @@ Go to Windows Update and upgrade if not already on Windows 11.
 
 ## Install WSL2 (before Docker Desktop)
 
-Run `wsl --install` in an admin Powershell or CMD.
+Run `wsl --install` (or `wsl --update` if already there) in an admin Powershell or CMD.
+It doesn't look like installing a new distro is necessary for Docker Desktop.
 
 (More info in the [official installation doc](https://docs.microsoft.com/en-us/windows/wsl/install))
 
