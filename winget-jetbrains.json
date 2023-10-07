@@ -7,7 +7,6 @@
 			"Packages" : 
 			[
 				{ "PackageIdentifier" : "Amazon.Corretto.17" },
-				{ "PackageIdentifier" : "SlackTechnologies.Slack" },
 				{ "PackageIdentifier" : "OpenVPNTechnologies.OpenVPN" }
 			],
 			"SourceDetails" : 
