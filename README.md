@@ -38,8 +38,6 @@ winget import -i <filename>
 Install IntelliJ IDEA from JetBrains Toolbox.
 Open it and activate settings sync, which should retrieve the color theme and coding style preferences.
 
-If not, import the color theme from [idea/Joffrey_New_Dark_2023.icls](./idea/Joffrey_New_Dark_2023.icls).
-
 ## Restore backup files
 
 For more sensitive things like SSH and GPG keys, env variables with tokens, etc., head over to the private repo:
