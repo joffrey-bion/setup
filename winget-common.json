@@ -7,17 +7,15 @@
 			"Packages" : 
 			[
 				{ "PackageIdentifier" : "Google.Chrome" },
-				{ "PackageIdentifier" : "TGRMNSoftware.BulkRenameUtility" },
+				{ "PackageIdentifier" : "Ditto.Ditto" },
+				{ "PackageIdentifier" : "Notepad++.Notepad++" },
+				{ "PackageIdentifier" : "OlegDanilov.RapidEnvironmentEditor" },
 				{ "PackageIdentifier" : "Discord.Discord" },
 				{ "PackageIdentifier" : "SlackTechnologies.Slack" },
-				{ "PackageIdentifier" : "Ditto.Ditto" },
-				{ "PackageIdentifier" : "Docker.DockerDesktop" },
 				{ "PackageIdentifier" : "Git.Git" },
 				{ "PackageIdentifier" : "GnuPG.Gpg4win" },
-				{ "PackageIdentifier" : "Notepad++.Notepad++" },
 				{ "PackageIdentifier" : "JetBrains.Toolbox" },
-				{ "PackageIdentifier" : "OlegDanilov.RapidEnvironmentEditor" },
-				{ "PackageIdentifier" : "Microsoft.Sysinternals.ProcessExplorer" }
+				{ "PackageIdentifier" : "Docker.DockerDesktop" }
 			],
 			"SourceDetails" : 
 			{
