@@ -40,6 +40,12 @@ winget import -i <filename>
 Install IntelliJ IDEA from JetBrains Toolbox.
 Open it and activate settings sync, which should retrieve the color theme and coding style preferences.
 
+## Chrome
+
+Open Chrome and log in with personal account to get access to passwords and whatnot.
+
+(Optionally, also log in with a professional account)
+
 ## Restore backup files
 
 For more sensitive things like SSH and GPG keys, env variables with tokens, etc., head over to the private repo:
