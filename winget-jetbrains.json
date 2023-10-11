@@ -6,7 +6,6 @@
 		{
 			"Packages" : 
 			[
-				{ "PackageIdentifier" : "Amazon.Corretto.17" },
 				{ "PackageIdentifier" : "OpenVPNTechnologies.OpenVPN" }
 			],
 			"SourceDetails" : 
