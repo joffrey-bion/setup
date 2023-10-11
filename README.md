@@ -35,16 +35,16 @@ Then import them using the following command:
 winget import -i <filename>
 ```
 
-## IntelliJ IDEA
-
-Install IntelliJ IDEA from JetBrains Toolbox.
-Open it and activate settings sync, which should retrieve the color theme and coding style preferences.
-
 ## Chrome
 
 Open Chrome and log in with personal account to get access to passwords and whatnot.
 
 (Optionally, also log in with a professional account)
+
+## IntelliJ IDEA
+
+Install IntelliJ IDEA from JetBrains Toolbox.
+Open it and activate settings sync, which should retrieve the color theme and coding style preferences.
 
 ## Restore backup files
 
