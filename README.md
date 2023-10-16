@@ -41,10 +41,28 @@ Open Chrome and log in with personal account to get access to passwords and what
 
 (Optionally, also log in with a professional account)
 
+## JetBrains Toolbox
+
+Log in to Toolbox with the JetBrains account.
+
 ## IntelliJ IDEA
 
 Install IntelliJ IDEA from JetBrains Toolbox.
-Open it and activate settings sync, which should retrieve the color theme and coding style preferences.
+
+1. On first start on the initial IDEA Welcome window (no projects open), go to `Customize` and `All settings...` at the bottom
+2. In `Settings Sync`
+  1. Click `Enable Settings Sync...`
+  2. Check `UI settings`, `Code settings`, `Plugins` (bundled only), and `Tools`
+  3. Click `Get Settings from Account`. This should retrieve the color theme and coding style preferences too.
+3. In `Version Control > Git`
+  1. Clear the protected branches text field
+  2. Uncheck `load protection rules from GitHub` (it doesn't know about exceptions and forbids force-push for me too)
+4. In `Version Control > GitHub`
+  1. Log-in via GitHub
+  2. Make sure `Clone git repositories using SSH` is checked
+5. In `Tools > Space`
+  1. Log in to `jetbrains.team`
+  2. Select `SSH` mode for cloning repositories
 
 ## Restore backup files
 
