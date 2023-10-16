@@ -30,7 +30,7 @@ curl -o winget-common.json https://raw.githubusercontent.com/joffrey-bion/setup/
 curl -o winget-jetbrains.json https://raw.githubusercontent.com/joffrey-bion/setup/main/winget-jetbrains.json
 ```
 
-Then import them using the following command:
+Then import them using the following command (in an admin shell if :
 ```
 winget import -i <filename>
 ```
@@ -41,6 +41,12 @@ winget import -i <filename>
 
 1. Open Chrome and log in with personal Google account to get access to passwords and whatnot.
 2. Open Chrome (again) and log in with the JetBrains Google account.
+3. Maybe pin both to the taskbar now
+
+## Restore backup files
+
+For more sensitive things like SSH and GPG keys, env variables with tokens, etc., head over to the private repo:
+https://github.com/joffrey-bion/backup/
 
 ## JetBrains Toolbox
 
@@ -64,8 +70,3 @@ Install IntelliJ IDEA from JetBrains Toolbox.
 5. In `Tools > Space`
    1. Log in to `jetbrains.team`
    2. Select `SSH` mode for cloning repositories
-
-## Restore backup files
-
-For more sensitive things like SSH and GPG keys, env variables with tokens, etc., head over to the private repo:
-https://github.com/joffrey-bion/backup/
