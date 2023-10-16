@@ -37,7 +37,7 @@ winget import -i <filename>
 
 ## Chrome
 
-**Do not pin to start** initially, wait until multiple accounts are setup.
+**Do not pin to taskbar** initially, wait until multiple accounts are setup.
 
 1. Open Chrome and log in with personal Google account to get access to passwords and whatnot.
 2. Open Chrome (again) and log in with the JetBrains Google account.
