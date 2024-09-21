@@ -1,23 +1,24 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
 	"CreationDate" : "2023-10-06T17:34:12.253-00:00",
-	"Sources" : 
+	"Sources" :
 	[
 		{
-			"Packages" : 
+			"Packages" :
 			[
-				{ "PackageIdentifier" : "Google.Chrome" },
-				{ "PackageIdentifier" : "Ditto.Ditto" },
-				{ "PackageIdentifier" : "Notepad++.Notepad++" },
-				{ "PackageIdentifier" : "OlegDanilov.RapidEnvironmentEditor" },
+				{ "PackageIdentifier" : "7zip.7zip" },
 				{ "PackageIdentifier" : "Discord.Discord" },
-				{ "PackageIdentifier" : "SlackTechnologies.Slack" },
+				{ "PackageIdentifier" : "Ditto.Ditto" },
+				{ "PackageIdentifier" : "Docker.DockerDesktop" },
 				{ "PackageIdentifier" : "Git.Git" },
 				{ "PackageIdentifier" : "GnuPG.Gpg4win" },
+				{ "PackageIdentifier" : "Google.Chrome" },
 				{ "PackageIdentifier" : "JetBrains.Toolbox" },
-				{ "PackageIdentifier" : "Docker.DockerDesktop" }
+				{ "PackageIdentifier" : "Notepad++.Notepad++" },
+				{ "PackageIdentifier" : "OlegDanilov.RapidEnvironmentEditor" },
+				{ "PackageIdentifier" : "SlackTechnologies.Slack" }
 			],
-			"SourceDetails" : 
+			"SourceDetails" :
 			{
 				"Argument" : "https://cdn.winget.microsoft.com/cache",
 				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
