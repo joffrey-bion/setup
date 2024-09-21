@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2023-10-06T17:34:12.253-00:00",
+	"CreationDate" : "2024-09-22T01:02:45.967-00:00",
 	"Sources" :
 	[
 		{
@@ -16,6 +16,7 @@
 				{ "PackageIdentifier" : "JetBrains.Toolbox" },
 				{ "PackageIdentifier" : "Notepad++.Notepad++" },
 				{ "PackageIdentifier" : "OlegDanilov.RapidEnvironmentEditor" },
+				{ "PackageIdentifier" : "OpenVPNTechnologies.OpenVPN" },
 				{ "PackageIdentifier" : "SlackTechnologies.Slack" }
 			],
 			"SourceDetails" :

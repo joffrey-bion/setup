@@ -30,17 +30,15 @@ Go to Windows Update and upgrade if not already on Windows 11.
 The Windows Terminal and `winget` are now available by default on Windows 11 (at least when logged in with my account).
 If it's not the case, follow the [official installation doc](https://learn.microsoft.com/en-us/windows/package-manager/winget/).
 
-To install the required software, download the relevant winget JSON files:
-
-```powershell
-curl -o winget-common.json https://raw.githubusercontent.com/joffrey-bion/setup/main/winget-common.json
-curl -o winget-jetbrains.json https://raw.githubusercontent.com/joffrey-bion/setup/main/winget-jetbrains.json
-```
-
-Then import them using the following command (in an admin shell):
-```powershell
-winget import -i <filename>
-```
+1. Download the `winget-packages.json` file:
+   ```powershell
+   curl -o winget-packages.json https://raw.githubusercontent.com/joffrey-bion/setup/main/winget-packages.json
+   ```
+2. Remove undesired software
+3. Import them using the following command (in an admin shell):
+   ```powershell
+   winget import -i winget-packages.json
+   ```
 
 ## Chrome
 
