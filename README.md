@@ -1,9 +1,11 @@
 # Windows 11 Setup
 
 This README contains instructions for the initial setup of Windows and software installation.
-It only contains things that can be shared publicly, so it's easy to get to this repository and files via whatever browser is available.
+It only contains things that can be shared publicly, and is thus accessible without authentication, so we can use 
+whatever browser is available.
 
-Sensitive backup files to restore are placed in another (private) repository called [backup](https://github.com/joffrey-bion/backup).
+Sensitive backup files to restore are placed in another (private) repository called
+[backup](https://github.com/joffrey-bion/backup).
 
 ## Windows upgrade and updates
 
@@ -36,7 +38,7 @@ curl -o winget-jetbrains.json https://raw.githubusercontent.com/joffrey-bion/set
 ```
 
 Then import them using the following command (in an admin shell):
-```
+```powershell
 winget import -i <filename>
 ```
 
