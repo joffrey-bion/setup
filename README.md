@@ -11,10 +11,15 @@ Go to Windows Update and upgrade if not already on Windows 11.
 
 ## Install WSL2 (before Docker Desktop)
 
-In an admin powershell (or CMD), run `wsl --install`.
-If already installed, run `wsl --update` to make sure the kernel is the latest.
-
-It doesn't look like installing a new distro is necessary for Docker Desktop.
+1. Open an admin PowerShell
+2. Run `wsl --install` to install WSL itself (and the default Ubuntu distro)
+3. Run `wsl --update` to make sure the kernel is the latest (especially if WSL was already installed)
+4. Once Ubuntu started, setup a username and password (independent of the Windows ones, e.g. `jbion`)
+5. Then update the software and distribution:
+   
+   ```bash
+   sudo apt update && sudo apt upgrade
+   ```
 
 (More info in the [official installation doc](https://docs.microsoft.com/en-us/windows/wsl/install))
 
@@ -30,7 +35,7 @@ curl -o winget-common.json https://raw.githubusercontent.com/joffrey-bion/setup/
 curl -o winget-jetbrains.json https://raw.githubusercontent.com/joffrey-bion/setup/main/winget-jetbrains.json
 ```
 
-Then import them using the following command (in an admin shell if :
+Then import them using the following command (in an admin shell):
 ```
 winget import -i <filename>
 ```
