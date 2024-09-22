@@ -1,15 +1,19 @@
 # Windows 11 Setup
 
 This README contains instructions for the initial setup of Windows and software installation.
-It only contains things that can be shared publicly, and is thus accessible without authentication, so we can use 
-whatever browser is available.
 
+It only contains things that can be shared publicly, and is thus accessible without authentication, so we can use 
+whatever browser is available on a fresh machine.
 Sensitive backup files to restore are placed in another (private) repository called
 [backup](https://github.com/joffrey-bion/backup).
 
+## Wait before you reset!
+
+You have probably forgotten something. Go check the [before-reset checklist](./before-reset.md) first.
+
 ## Windows upgrade and updates
 
-Go to Windows Update and upgrade if not already on Windows 11.
+[Open Windows Update](ms-settings:windowsupdate) and check and install updates.
 
 ## Install WSL2 (before Docker Desktop)
 
