@@ -34,14 +34,14 @@ You have probably forgotten something. Go check the [before-reset checklist](./b
 The Windows Terminal and `winget` are now available by default on Windows 11 (at least when logged in with my account).
 If it's not the case, follow the [official installation doc](https://learn.microsoft.com/en-us/windows/package-manager/winget/).
 
-1. Download the `winget-packages.json` file:
+1. Download the `winget-packages.json` file (the short URL is a link to the raw file in this repo):
    ```powershell
-   curl -o winget-packages.json https://raw.githubusercontent.com/joffrey-bion/setup/main/winget-packages.json
+   curl -o pkgs.json https://git.new/joff-pkgs
    ```
 2. Remove undesired software
 3. Import them using the following command (in an admin shell):
    ```powershell
-   winget import -i winget-packages.json
+   winget import -i pkgs.json
    ```
 
 ## Chrome
