@@ -15,6 +15,10 @@ You have probably forgotten something. Go check the [before-reset checklist](./b
 
 [Open Windows Update](ms-settings:windowsupdate) and check and install updates.
 
+## Windows cleanup
+
+Uninstall all unnecessary pre-installed apps (OneDrive, weather, news, to-do, ...)
+
 ## Install WSL2 (before Docker Desktop)
 
 1. Open an admin PowerShell
@@ -38,7 +42,7 @@ If it's not the case, follow the [official installation doc](https://learn.micro
    ```powershell
    curl -o pkgs.json https://git.new/joff-pkgs
    ```
-2. Remove undesired software
+2. Remove undesired software fron the JSON file
 3. Import them using the following command (in an admin shell):
    ```powershell
    winget import -i pkgs.json
