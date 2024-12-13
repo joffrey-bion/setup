@@ -14,7 +14,7 @@ You have probably forgotten something. Go check the [before-reset checklist](./b
 ## Windows clean slate
 
 * Follow the initial boot, and log in to your Microsoft Account
-* [Open Windows Update](ms-settings:windowsupdate) and check and install updates.
+* <a href="ms-settings:windowsupdate">Open Windows Update</a> and check and install updates.
 * Unpin / uninstall all unnecessary pre-installed apps (OneDrive, weather, news, to-do, ...)
   ```powershell
   winget uninstall OneDrive
