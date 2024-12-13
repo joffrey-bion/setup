@@ -11,13 +11,19 @@ Sensitive backup files to restore are placed in another (private) repository cal
 
 You have probably forgotten something. Go check the [before-reset checklist](./before-reset.md) first.
 
-## Windows upgrade and updates
+## Windows clean slate
 
-[Open Windows Update](ms-settings:windowsupdate) and check and install updates.
-
-## Windows cleanup
-
-Uninstall all unnecessary pre-installed apps (OneDrive, weather, news, to-do, ...)
+* Follow the initial boot, and log in to your Microsoft Account
+* [Open Windows Update](ms-settings:windowsupdate) and check and install updates.
+* Unpin / uninstall all unnecessary pre-installed apps (OneDrive, weather, news, to-do, ...)
+  ```powershell
+  winget uninstall OneDrive
+  winget uninstall "Microsoft Clipchamp"
+  winget uninstall "Microsoft People"
+  winget uninstall "Phone Link"
+  winget uninstall "Power Automate"
+  winget uninstall "Windows Notepad"
+  ```
 
 ## Install WSL2 (before Docker Desktop)
 
