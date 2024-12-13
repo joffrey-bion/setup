@@ -25,6 +25,41 @@ You have probably forgotten something. Go check the [before-reset checklist](./b
   winget uninstall "Windows Notepad"
   ```
 
+## Setup a dev drive D:\
+
+Follow the instructions on the [official Windows page](https://learn.microsoft.com/en-us/windows/dev-drive/).
+
+In short, go to [Settings > Storage > Disks & volumes](ms-settings:disksandvolumes) and create it from there (you can shrink the current `C:\` partition to create unallocated space for the future `D:\`).
+
+Then, create the file structure:
+
+```powershell
+mkdir D:\projects
+mkdir D:\packages
+mkdir D:\packages\cargo
+mkdir D:\packages\gradle
+mkdir D:\packages\maven
+mkdir D:\packages\npm
+mkdir D:\packages\yarn
+setx /M CARGO_HOME D:\packages\cargo
+setx /M GRADLE_USER_HOME "D:\packages\gradle"
+setx /M MAVEN_OPTS "-Dmaven.repo.local=D:\packages\maven"
+setx /M npm_config_cache D:\packages\npm
+setx /M YARN_CACHE_FOLDER D:\packages\yarn
+
+mkdir "$env:USERPROFILE\.m2"
+@"
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 
+                              http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>D:\packages\maven</localRepository>
+</settings>
+"@ | Set-Content -Path "$env:USERPROFILE\.m2\settings.xml" -Encoding UTF8
+
+```
+
+
 ## Install WSL2 (before Docker Desktop)
 
 1. Open an admin PowerShell
