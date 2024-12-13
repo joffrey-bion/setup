@@ -14,7 +14,7 @@ You have probably forgotten something. Go check the [before-reset checklist](./b
 ## Windows clean slate
 
 * Follow the initial boot, and log in to your Microsoft Account
-* <a href="ms-settings:windowsupdate" target="_blank">Open Windows Update</a> and check and install updates.
+* [Open Windows Update](https://intradeus.github.io/http-protocol-redirector/?r=ms-settings:windowsupdate) and check and install updates.
 * Unpin / uninstall all unnecessary pre-installed apps (OneDrive, weather, news, to-do, ...)
   ```powershell
   winget uninstall OneDrive
@@ -29,7 +29,7 @@ You have probably forgotten something. Go check the [before-reset checklist](./b
 
 Follow the instructions on the [official Windows page](https://learn.microsoft.com/en-us/windows/dev-drive/).
 
-In short, go to [Settings > Storage > Disks & volumes](ms-settings:disksandvolumes) and create it from there (you can shrink the current `C:\` partition to create unallocated space for the future `D:\`).
+In short, go to [Settings > Storage > Disks & volumes](https://intradeus.github.io/http-protocol-redirector/?r=ms-settings:disksandvolumes) and create it from there (you can shrink the current `C:\` partition to create unallocated space for the future `D:\`).
 
 Then, create the file structure:
 
