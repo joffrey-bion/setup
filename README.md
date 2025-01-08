@@ -31,21 +31,24 @@ Follow the instructions on the [official Windows page](https://learn.microsoft.c
 
 In short, go to [Settings > Storage > Disks & volumes](https://intradeus.github.io/http-protocol-redirector/?r=ms-settings:disksandvolumes) and create it from there (you can shrink the current `C:\` partition to create unallocated space for the future `D:\`).
 
-Then, create the file structure:
+Then, create the file structure by running this in PowerShell:
 
 ```powershell
 mkdir D:\projects
 mkdir D:\packages
 mkdir D:\packages\cargo
 mkdir D:\packages\gradle
+mkdir D:\packages\konan
 mkdir D:\packages\maven
 mkdir D:\packages\npm
 mkdir D:\packages\yarn
-setx /M CARGO_HOME D:\packages\cargo
+
+setx /M CARGO_HOME "D:\packages\cargo"
 setx /M GRADLE_USER_HOME "D:\packages\gradle"
+setx /M KONAN_DATA_DIR "D:\packages\konan"
 setx /M MAVEN_OPTS "-Dmaven.repo.local=D:\packages\maven"
-setx /M npm_config_cache D:\packages\npm
-setx /M YARN_CACHE_FOLDER D:\packages\yarn
+setx /M npm_config_cache "D:\packages\npm"
+setx /M YARN_CACHE_FOLDER "D:\packages\yarn"
 
 mkdir "$env:USERPROFILE\.m2"
 @"
@@ -56,9 +59,7 @@ mkdir "$env:USERPROFILE\.m2"
     <localRepository>D:\packages\maven</localRepository>
 </settings>
 "@ | Set-Content -Path "$env:USERPROFILE\.m2\settings.xml" -Encoding UTF8
-
 ```
-
 
 ## Install WSL2 (before Docker Desktop)
 
