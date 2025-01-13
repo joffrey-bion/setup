@@ -107,6 +107,8 @@ https://github.com/joffrey-bion/backup/
 
 Log in to Toolbox with the JetBrains account.
 
+Log in to Space in Toolbox services.
+
 ## IntelliJ IDEA
 
 Install IntelliJ IDEA from JetBrains Toolbox.
