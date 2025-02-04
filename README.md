@@ -105,9 +105,11 @@ https://github.com/joffrey-bion/backup/
 
 ## JetBrains Toolbox
 
-Log in to Toolbox with the JetBrains account.
+Open Toolbox and log in as the JetBrains organization through the [Toolbox Enterprise JetBrains portal](https://tbe.labs.jb.gg/).
+If presented the option, also log in with the JetBrains account.
+![image](https://github.com/user-attachments/assets/84d21b75-70bd-45b3-a992-879f40f48289)
 
-Log in to Space in Toolbox services.
+Also log in to Space in Toolbox services.
 
 ## IntelliJ IDEA
 
