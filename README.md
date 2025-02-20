@@ -17,11 +17,31 @@ You have probably forgotten something. Go check the [before-reset checklist](./b
 * [Open Windows Update](https://intradeus.github.io/http-protocol-redirector/?r=ms-settings:windowsupdate) and check and install updates.
 * Unpin / uninstall all unnecessary pre-installed apps (OneDrive, weather, news, to-do, ...)
   ```powershell
-  winget uninstall OneDrive
+  winget uninstall "Copilot"
+  winget uninstall "Dell SupportAssist Remediation"
+  winget uninstall "Dell Customer Connect"
+  winget uninstall "Dell Mobile Connect 3.3"
+  winget uninstall "LinkedIn"
+  winget uninstall "Mail and Calendar"
+  winget uninstall "Microsoft 365 Copilot"
+  winget uninstall "Microsoft Bing"
   winget uninstall "Microsoft Clipchamp"
+  winget uninstall "Microsoft Family"
   winget uninstall "Microsoft People"
+  winget uninstall "Microsoft Sticky Notes"
+  winget uninstall Microsoft.Teams
+  winget uninstall Microsoft.Teams.Free
+  winget uninstall "Microsoft To Do"
+  winget uninstall "Movies & TV"
+  winget uninstall "My Dell"
+  winget uninstall "News"
+  winget uninstall OneDrive
+  winget uninstall "OneNote for Windows 10"
+  winget uninstall "Outlook for Windows"
   winget uninstall "Phone Link"
   winget uninstall "Power Automate"
+  winget uninstall "Skype"
+  winget uninstall "WebAdvisor by McAfee"
   winget uninstall "Windows Notepad"
   ```
 
