@@ -1,32 +1,56 @@
 {
-	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2024-09-22T01:02:45.967-00:00",
-	"Sources" :
-	[
-		{
-			"Packages" :
-			[
-				{ "PackageIdentifier" : "7zip.7zip" },
-				{ "PackageIdentifier" : "Discord.Discord" },
-				{ "PackageIdentifier" : "Ditto.Ditto" },
-				{ "PackageIdentifier" : "Docker.DockerDesktop" },
-				{ "PackageIdentifier" : "Git.Git" },
-				{ "PackageIdentifier" : "GnuPG.Gpg4win" },
-				{ "PackageIdentifier" : "Google.Chrome" },
-				{ "PackageIdentifier" : "JetBrains.Toolbox" },
-				{ "PackageIdentifier" : "Notepad++.Notepad++" },
-				{ "PackageIdentifier" : "OlegDanilov.RapidEnvironmentEditor" },
-				{ "PackageIdentifier" : "OpenVPNTechnologies.OpenVPN" },
-				{ "PackageIdentifier" : "SlackTechnologies.Slack" }
-			],
-			"SourceDetails" :
-			{
-				"Argument" : "https://cdn.winget.microsoft.com/cache",
-				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
-				"Name" : "winget",
-				"Type" : "Microsoft.PreIndexed.Package"
-			}
-		}
-	],
-	"WinGetVersion" : "1.7.2722-preview"
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2026-03-03T23:31:51.595-00:00",
+  "Sources": [
+    {
+      "Packages": [
+        {
+          "PackageIdentifier": "7zip.7zip"
+        },
+        {
+          "PackageIdentifier": "Discord.Discord"
+        },
+        {
+          "PackageIdentifier": "Ditto.Ditto"
+        },
+        {
+          "PackageIdentifier": "Docker.DockerDesktop"
+        },
+        {
+          "PackageIdentifier": "Git.Git"
+        },
+        {
+          "PackageIdentifier": "GnuPG.GnuPG"
+        },
+        {
+          "PackageIdentifier": "Google.Chrome"
+        },
+        {
+          "PackageIdentifier": "JetBrains.Toolbox"
+        },
+        {
+          "PackageIdentifier": "Microsoft.PowerToys"
+        },
+        {
+          "PackageIdentifier": "Notepad++.Notepad++"
+        },
+        {
+          "PackageIdentifier": "OlegDanilov.RapidEnvironmentEditor"
+        },
+        {
+          "PackageIdentifier": "SimonKnuth.Scanner"
+        },
+        {
+          "PackageIdentifier": "SlackTechnologies.Slack"
+        }
+      ],
+      "SourceDetails": {
+        "Argument": "https://cdn.winget.microsoft.com/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ],
+  "WinGetVersion": "1.28.190"
 }
