@@ -7,54 +7,120 @@ whatever browser is available on a fresh machine.
 Sensitive backup files to restore are placed in another (private) repository called
 [backup](https://github.com/joffrey-bion/backup).
 
-## Wait before you reset!
+> [!CAUTION]
+> **Before you reset!** 
+> You have probably forgotten something. Go check the [before-reset checklist](./before-reset.md) first.
 
-You have probably forgotten something. Go check the [before-reset checklist](./before-reset.md) first.
+## Setup Windows with custom user dir
 
-## Windows clean slate
+Follow the initial boot until asked to log in with your Microsoft Account.
 
-* Follow the initial boot, and log in to your Microsoft Account
-* [Open Windows Update](https://intradeus.github.io/http-protocol-redirector/?r=ms-settings:windowsupdate) and check and install updates.
-* Unpin / uninstall all unnecessary pre-installed apps (OneDrive, weather, news, to-do, ...)
-  ```powershell
-  winget uninstall "Copilot"
-  winget uninstall "Dell SupportAssist Remediation"
-  winget uninstall "Dell Customer Connect"
-  winget uninstall "Dell Mobile Connect 3.3"
-  winget uninstall "LinkedIn"
-  winget uninstall "Mail and Calendar"
-  winget uninstall "Microsoft 365 Copilot"
-  winget uninstall "Microsoft Bing"
-  winget uninstall "Microsoft Clipchamp"
-  winget uninstall "Microsoft Family"
-  winget uninstall "Microsoft People"
-  winget uninstall "Microsoft Sticky Notes"
-  winget uninstall Microsoft.Teams
-  winget uninstall Microsoft.Teams.Free
-  winget uninstall "Microsoft To Do"
-  winget uninstall "Movies & TV"
-  winget uninstall "My Dell"
-  winget uninstall "News"
-  winget uninstall OneDrive
-  winget uninstall "OneNote for Windows 10"
-  winget uninstall "Outlook for Windows"
-  winget uninstall "Phone Link"
-  winget uninstall "Power Automate"
-  winget uninstall "Skype"
-  winget uninstall "WebAdvisor by McAfee"
-  winget uninstall "Windows Notepad"
-  ```
+DO NOT LOG IN YET.
+
+Press `Shift+F10` to open the `Command Prompt` and run the following commands:
+
+```cmd
+cd oobe
+SetDefaultUserFolder.cmd joffrey
+```
+
+Then close the Command Prompt and carry on with the MS account login.
+
+## Update Windows
+
+[Open Windows Update](https://intradeus.github.io/http-protocol-redirector/?r=ms-settings:windowsupdate) and check and install updates.
+
+## Debloat Windows
+
+Unpin / uninstall all unnecessary pre-installed apps (OneDrive, weather, news, to-do, ...)
+
+```powershell
+winget uninstall "Copilot"
+winget uninstall "Dell SupportAssist Remediation"
+winget uninstall "Dell Customer Connect"
+winget uninstall "Dell Mobile Connect 3.3"
+winget uninstall "LinkedIn"
+winget uninstall "Mail and Calendar"
+winget uninstall "Microsoft 365 Copilot"
+winget uninstall "Microsoft Bing"
+winget uninstall "Microsoft Clipchamp"
+winget uninstall "Microsoft Family"
+winget uninstall "Microsoft People"
+winget uninstall "Microsoft Sticky Notes"
+winget uninstall Microsoft.Teams
+winget uninstall Microsoft.Teams.Free
+winget uninstall "Microsoft To Do"
+winget uninstall "Movies & TV"
+winget uninstall "My Dell"
+winget uninstall "News"
+winget uninstall OneDrive
+winget uninstall "OneNote for Windows 10"
+winget uninstall "Outlook for Windows"
+winget uninstall "Phone Link"
+winget uninstall "Power Automate"
+winget uninstall "Skype"
+winget uninstall "WebAdvisor by McAfee"
+winget uninstall "Windows Notepad"
+```
+  
+Run Win11Debloat to disable unwanted features and configure basic things:
+
+```powershell
+& ([scriptblock]::Create((irm "https://debloat.raphi.re/"))) `
+-LogPath %userprofile%\debloat.log `
+-ClearStartAllUsers `
+-CombineMMTaskbarAlways `
+-CombineTaskbarAlways `
+-CreateRestorePoint `
+-DisableBing `
+-DisableBitlockerAutoEncryption `
+-DisableClickToDo `
+-DisableCopilot `
+-DisableDVR `
+-DisableDeliveryOptimization `
+-DisableDesktopSpotlight `
+-DisableDragTray `
+-DisableEdgeAI `
+-DisableEdgeAds `
+-DisableGameBarIntegration `
+-DisableLockscreenTips `
+-DisableNotepadAI `
+-DisablePaintAI `
+-DisableRecall `
+-DisableSearchHistory `
+-DisableSettings365Ads `
+-DisableStartPhoneLink `
+-DisableStartRecommended `
+-DisableStickyKeys `
+-DisableSuggestions `
+-DisableTelemetry `
+-EnableDarkMode `
+-EnableEndTask `
+-ExplorerToDownloads `
+-HideDupliDrive `
+-HideGallery `
+-HideHome `
+-HideSearchTb `
+-MMTaskbarModeAll `
+-ShowHiddenFolders `
+-ShowKnownFileExt
+```
 
 ## Setup a dev drive D:\
 
-Follow the instructions on the [official Windows page](https://learn.microsoft.com/en-us/windows/dev-drive/).
+Go to [Settings > Storage > Disks & volumes](https://intradeus.github.io/http-protocol-redirector/?r=ms-settings:disksandvolumes)
+and create a dev drive `D:` from there (you can shrink the current `C:\` partition to create unallocated space for the 
+future `D:\`).
 
-In short, go to [Settings > Storage > Disks & volumes](https://intradeus.github.io/http-protocol-redirector/?r=ms-settings:disksandvolumes) and create it from there (you can shrink the current `C:\` partition to create unallocated space for the future `D:\`).
+> More info on the [official Windows page](https://learn.microsoft.com/en-us/windows/dev-drive/).
 
 Then, create the file structure by running this in PowerShell:
 
 ```powershell
 mkdir D:\projects
+mkdir D:\projects\jetbrains
+mkdir D:\projects\perso
+
 mkdir D:\packages
 mkdir D:\packages\cargo
 mkdir D:\packages\gradle
@@ -86,7 +152,7 @@ mkdir "$env:USERPROFILE\.m2"
 1. Open an admin PowerShell
 2. Run `wsl --install` to install WSL itself (and the default Ubuntu distro)
 3. Run `wsl --update` to make sure the kernel is the latest (especially if WSL was already installed)
-4. Once Ubuntu started, setup a username and password (independent of the Windows ones, e.g. `jbion`)
+4. Once Ubuntu started, set up a username and password (independent of the Windows ones, e.g. `jbion`)
 5. Then update the software and distribution:
    
    ```bash
@@ -97,14 +163,11 @@ mkdir "$env:USERPROFILE\.m2"
 
 ## Install software
 
-The Windows Terminal and `winget` are now available by default on Windows 11 (at least when logged in with my account).
-If it's not the case, follow the [official installation doc](https://learn.microsoft.com/en-us/windows/package-manager/winget/).
-
 1. Download the `winget-packages.json` file (the short URL is a link to the raw file in this repo):
    ```powershell
    curl -o pkgs.json https://git.new/joff-pkgs
    ```
-2. Remove undesired software fron the JSON file
+2. Remove undesired software from the JSON file
 3. Import them using the following command (in an admin shell):
    ```powershell
    winget import -i pkgs.json
