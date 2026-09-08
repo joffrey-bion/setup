@@ -26,15 +26,15 @@ provided by Christoph Schneegans.
 > The **push-button reset** feature doesn't support answer files.
 > They are only available during a clean installation (from external media).
 
-### Provisioning packages
+## Provisioning packages
 
 TODO
 
-### Post-setup script – `SetupComplete.cmd`
+## Post-setup script – `SetupComplete.cmd`
 
 TODO
 
-### Extensibility scripts (push-button reset)
+## Extensibility scripts (push-button reset)
 
 TODO
 https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/add-a-script-to-push-button-reset-features?view=windows-11
