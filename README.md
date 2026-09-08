@@ -175,7 +175,8 @@ mkdir "$env:USERPROFILE\.m2"
 
 ## Chrome
 
-**Do not pin to taskbar** initially, wait until multiple accounts are setup.
+> [!WARNING]
+> **Do not pin to taskbar** initially, wait until multiple accounts are setup.
 
 1. Open Chrome and log in with personal Google account to get access to passwords and whatnot.
 2. Open Chrome (again) and log in with the JetBrains Google account.
@@ -185,6 +186,13 @@ mkdir "$env:USERPROFILE\.m2"
 
 For more sensitive things like SSH and GPG keys, env variables with tokens, etc., head over to the private repo:
 https://github.com/joffrey-bion/backup/
+
+## Set UTF-8 as default encoding
+
+While there is a registry value to edit, it's undocumented and might not be enough.
+The best way is to through the official UI, which is... absurdly Byzantine:
+
+<img width="1168" height="866" alt="image" src="https://github.com/user-attachments/assets/7ed56305-c096-4bd1-94a3-a09723038be4" />
 
 ## JetBrains Toolbox
 
